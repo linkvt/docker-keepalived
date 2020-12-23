@@ -28,7 +28,7 @@ jobs:
         with:
           install: true # use buildx on normal `docker build` calls
 
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2.1.4
       - run: npm install -g bats@1.2.1
       - run: bats -v
 
