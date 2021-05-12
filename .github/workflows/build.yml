@@ -32,7 +32,7 @@ jobs:
       - run: sudo npm install -g bats@1.2.1
       - run: bats -v
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
       - run: make build-nocache NAME=${{ secrets.CONTAINER_REPOSITORY }} VERSION=${{ env.VERSION }}
       - run: make test NAME=${{ secrets.CONTAINER_REPOSITORY }} VERSION=${{ env.VERSION }}
 
